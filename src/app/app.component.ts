@@ -1,4 +1,4 @@
-import { Component, ElementRef, VERSION, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -6,8 +6,6 @@ import { Component, ElementRef, VERSION, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
-
   show = false;
 
   @ViewChild('password') password: ElementRef;
